@@ -1,0 +1,3485 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (214.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (217.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-06 10:00:26.413453"], ["updated_at", "2018-02-06 10:00:26.413453"]]
+  [1m[35m (167.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2018-02-06 15:47:19 +0545
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 195ms (Views: 8.8ms)
+
+
+Started GET "/ideas/index" for ::1 at 2018-02-06 15:51:45 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/ideas/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/ideas/index" for ::1 at 2018-02-06 15:52:03 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/ideas/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/ideas/index" for ::1 at 2018-02-06 15:52:46 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/ideas/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/ideas/index" for ::1 at 2018-02-06 15:53:38 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/ideas/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/ideas/index" for ::1 at 2018-02-06 15:54:10 +0545
+  
+ActionController::RoutingError (No route matches [GET] "/ideas/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2018-02-06 15:56:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 1198ms (Views: 1020.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:16:33 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3646ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/cdrrazan/Enliv/idea-generator/app/assets/config
+  /home/cdrrazan/Enliv/idea-generator/app/assets/images
+  /home/cdrrazan/Enliv/idea-generator/app/assets/javascripts
+  /home/cdrrazan/Enliv/idea-generator/app/assets/stylesheets
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /home/cdrrazan/Enliv/idea-generator/node_modules
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/cdrrazan/.rvm/gems/ruby-2.4.0/gems/bootstrap-sass-3.3.7/assets/images):
+    4:     <title>IdeaGenerator</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___4190446407988833543_47428001492860'
+Started GET "/" for ::1 at 2018-02-06 16:20:02 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2539ms (Views: 2376.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:26:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 210ms (Views: 208.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:26:53 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 154ms
+
+
+  
+ActionView::Template::Error (undefined method `navbar' for #<#<Class:0x00563ed578ee10>:0x007f97f406eda0>):
+     9:   </head>
+    10: 
+    11:   <body>
+    12:    <%= navbar container: false %>
+    13: 
+    14:     <%= yield %>
+    15:   </body>
+  
+app/views/layouts/application.html.erb:12:in `_app_views_layouts_application_html_erb__2025577409399231632_70145305467820'
+Started GET "/" for ::1 at 2018-02-06 16:27:09 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 40ms (Views: 37.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:27:53 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 41.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:31:57 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 45.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:00 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 44.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:19 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 52.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:21 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 209ms (Views: 207.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:22 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 60.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:22 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:23 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 40ms (Views: 38.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 94ms (Views: 93.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 74.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 60.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:25 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 41ms (Views: 39.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 40ms (Views: 38.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:32:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (1.5ms)
+Completed 200 OK in 80ms (Views: 78.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:33:05 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (249.3ms)
+Completed 500 Internal Server Error in 294ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `about_us_path' for #<#<Class:0x00563ed578ee10>:0x007f97f828aef0>):
+     7: 
+     8:         <ul class="nav navbar-nav">
+     9:           <li class="active"><a href="#">HOME</a></li>
+    10:           <li><%=link_to "ABOUT", about_us_path%></li>
+    11:           <li><%=link_to "OUR SERVICES", our_services_path %></li>
+    12:           <li><%=link_to "RATES", rates_path %></li>
+    13:           <li><%=link_to'CAREERS', careers_path%></li>
+  
+app/views/layouts/_navbar.html.erb:10:in `_app_views_layouts__navbar_html_erb___1640316277963816519_70145407862080'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2025577409399231632_70145340079220'
+Started GET "/" for ::1 at 2018-02-06 16:33:49 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (372.7ms)
+Completed 500 Internal Server Error in 523ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ideas_path' for #<#<Class:0x00563ed578ee10>:0x007f980019b910>
+Did you mean?  image_path):
+     7: 
+     8:         <ul class="nav navbar-nav">
+     9:           <li class="active"><a href="#">HOME</a></li>
+    10:           <li><%=link_to "ABOUT", ideas_path%></li>
+    11: <!--          <li><%=link_to "OUR SERVICES", our_services_path %></li>
+    12:           <li><%=link_to "RATES", rates_path %></li>
+    13:           <li><%=link_to'CAREERS', careers_path%></li>
+  
+app/views/layouts/_navbar.html.erb:10:in `_app_views_layouts__navbar_html_erb___1640316277963816519_70145256745940'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2025577409399231632_70145406714060'
+Started GET "/" for ::1 at 2018-02-06 16:34:12 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (234.2ms)
+Completed 500 Internal Server Error in 272ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `ideas_path' for #<#<Class:0x00563ed578ee10>:0x007f97f5fb5538>
+Did you mean?  image_path):
+     7: 
+     8:         <ul class="nav navbar-nav">
+     9:           <li class="active"><a href="#">HOME</a></li>
+    10:    <!--        <li><%=link_to "ABOUT", ideas_path%></li>
+    11:          <li><%=link_to "OUR SERVICES", our_services_path %></li>
+    12:           <li><%=link_to "RATES", rates_path %></li>
+    13:           <li><%=link_to'CAREERS', careers_path%></li>
+  
+app/views/layouts/_navbar.html.erb:10:in `_app_views_layouts__navbar_html_erb___1640316277963816519_70145317019260'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2025577409399231632_70145321815960'
+Started GET "/" for ::1 at 2018-02-06 16:34:28 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 48.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:35 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 46.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 65.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:37 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:37 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 57.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:37 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:38 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 58.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:43 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:43 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 118ms (Views: 117.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:44 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 61.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:45 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:46 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 62.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:34:47 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:36:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (227.6ms)
+Completed 500 Internal Server Error in 266ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00563ed578ee10>:0x007f97ee810b18>
+Did you mean?  video_path):
+     7: 
+     8:         <ul class="nav navbar-nav">
+     9:           <li class="active"><a href="#">HOME</a></li>
+    10:       <!--  <li><%=link_to "ABOUT", index_path%></li>
+    11:           <li><%=link_to"FAQS", faq_path %></li>-->
+    12:           <li><a href="#">CONTACT</a></li>
+    13:         </ul>
+  
+app/views/layouts/_navbar.html.erb:10:in `_app_views_layouts__navbar_html_erb___1640316277963816519_70145253959920'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb__2025577409399231632_70145259006580'
+Started GET "/" for ::1 at 2018-02-06 16:36:55 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:37:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 104ms (Views: 102.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:37:21 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 79.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:37:22 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 123ms (Views: 121.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:37:22 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 78ms (Views: 76.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:37:23 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 131ms (Views: 130.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:37:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:40:38 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 61.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:40:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 73.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:40:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 60.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 16:41:53 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:02:58 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1503ms (Views: 1501.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:05 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:12 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 65.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 65.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:17 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:17 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 51.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 69.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:30 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 58.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:04:30 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 56.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:05:01 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 42.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:05:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:05:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:08:35 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 36.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:13:01 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...: $primary-font": expected "{", was ";"):
+    4:     <title>IdeaGenerator</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Titillium+Web:300,400,600,700" rel="stylesheet">
+   10:   </head>
+  
+app/assets/stylesheets/application.scss:27
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2025577409399231632_70145249595180'
+Started GET "/" for ::1 at 2018-02-06 17:13:47 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1393ms (Views: 1392.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:12 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 444ms (Views: 264.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 81ms (Views: 80.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 1395ms (Views: 1394.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:46 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 58.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:47 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:48 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:48 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:48 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:49 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 58.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:52 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 179ms (Views: 177.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:54 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:55 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (1.8ms)
+Completed 200 OK in 61ms (Views: 60.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:55 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+Completed 200 OK in 64ms (Views: 62.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:14:55 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 60.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:15:25 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1297ms (Views: 1296.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:15:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 222ms (Views: 220.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:15:33 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 48.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:15:33 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 88.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:15:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (2.1ms)
+Started GET "/" for ::1 at 2018-02-06 17:15:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (4.7ms)
+Started GET "/" for ::1 at 2018-02-06 17:15:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 207ms (Views: 205.3ms)
+
+
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 249ms (Views: 246.6ms)
+
+
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 120ms (Views: 114.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:16:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 553ms
+
+
+  
+ActionView::Template::Error (Undefined variable: "$-font".):
+    4:     <title>IdeaGenerator</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:     <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Titillium+Web:300,400,600,700" rel="stylesheet">
+   10:   </head>
+  
+app/assets/stylesheets/application.scss:28
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2150227752343419173_69921633587460'
+Started GET "/" for ::1 at 2018-02-06 17:16:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1506ms (Views: 1503.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:16:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 67.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:16:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navbar.html.erb (1.9ms)
+Completed 200 OK in 75ms (Views: 67.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:16:53 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:17:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:17:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 52.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:17:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:17:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 71.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:18:06 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 52.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:18:08 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 48.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:18:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:18:33 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:18:35 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:18:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 51.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:19:05 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1389ms (Views: 1387.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:19:17 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 1365ms (Views: 1364.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:19:35 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 1367ms (Views: 1365.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:19:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1980ms (Views: 1979.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:20:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 1482ms (Views: 1479.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:20:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 56.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:20:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 65.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:20:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 68.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:20:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1579ms (Views: 1577.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:21:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 441ms (Views: 270.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:21:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 1538ms (Views: 1537.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:21:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:00 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1915ms (Views: 1913.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:23 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1563ms (Views: 1561.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 105ms (Views: 103.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 52.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 66.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:37 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 49.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 57.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:22:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (14.9ms)
+Completed 200 OK in 1511ms (Views: 1510.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:23:01 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:23:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:26:23 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:26:25 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 64.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:26:25 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 80ms (Views: 77.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:26:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1928ms (Views: 1927.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:26:56 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:28:25 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 1532ms (Views: 1530.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:28:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 1352ms (Views: 1351.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:28:55 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 1392ms (Views: 1390.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:29:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 1487ms (Views: 1485.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:29:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1264ms (Views: 1263.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:29:38 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1511ms (Views: 1510.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:29:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:29:45 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:29:46 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 61.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:30:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:30:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 1634ms (Views: 1633.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:30:38 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1433ms (Views: 1432.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:31:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1721ms (Views: 1719.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:32:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 1538ms (Views: 1536.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:33:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (1.3ms)
+Completed 200 OK in 1615ms (Views: 1612.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:34:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+Started GET "/" for ::1 at 2018-02-06 17:34:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 3169ms (Views: 3167.6ms)
+
+
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 2964ms (Views: 2946.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:34:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1769ms (Views: 1767.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:35:12 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1723ms (Views: 1721.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:35:22 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 1566ms (Views: 1564.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:35:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:35:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 297ms (Views: 294.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:35:37 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 34.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:36:00 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1684ms (Views: 1682.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:36:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1440ms (Views: 1438.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:36:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 60ms (Views: 58.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:36:58 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 1392ms (Views: 1391.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:37:09 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 52.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:37:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 37.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:37:17 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:37:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 1380ms (Views: 1379.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:37:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:40:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 1366ms (Views: 1364.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:40:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 186ms (Views: 184.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:40:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 60.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:40:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navbar.html.erb (3.1ms)
+Completed 200 OK in 326ms (Views: 324.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:44:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+Started GET "/" for ::1 at 2018-02-06 17:44:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 2293ms (Views: 2291.5ms)
+
+
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 2196ms (Views: 2171.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:46:05 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 36.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:47:09 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 60.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:47:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:49:38 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:50:04 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 65.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:50:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1196ms (Views: 1195.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:50:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 39.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:50:43 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 186ms (Views: 185.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:50:47 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 40.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:50:59 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1415ms (Views: 1414.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 17:51:10 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1464ms (Views: 1463.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:12:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 49ms (Views: 47.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:12:47 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:13:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1215ms (Views: 1214.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:14:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 208ms (Views: 202.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:14:28 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 43.8ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:14:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 98ms (Views: 94.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:14:33 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 42.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:15:22 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.8ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20180206123225)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20180206123225)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20180206123225)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20180206123225)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180206123225"]]
+  [1m[35m (144.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2018-02-06 18:21:58 +0545
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (95.4ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (88.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (78.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180206123225)[0m
+  [1m[35m (96.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-06 12:44:25.602005"], ["updated_at", "2018-02-06 12:44:25.602005"]]
+  [1m[35m (66.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (105.6ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (100.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (74.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180206123225)[0m
+  [1m[35m (100.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-06 12:44:26.065955"], ["updated_at", "2018-02-06 12:44:26.065955"]]
+  [1m[35m (68.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (120.6ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (97.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (78.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180206123225)[0m
+  [1m[35m (121.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-06 12:52:22.057116"], ["updated_at", "2018-02-06 12:52:22.057116"]]
+  [1m[35m (80.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "ideas"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (100.0ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (108.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (80.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180206123225)[0m
+  [1m[35m (124.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-06 12:52:22.574365"], ["updated_at", "2018-02-06 12:52:22.574365"]]
+  [1m[35m (87.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+Started GET "/" for ::1 at 2018-02-06 18:38:51 +0545
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for ::1 at 2018-02-06 18:39:12 +0545
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (98.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (106.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIdeas (20180206123225)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ideas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" text, "author" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180206123225"]]
+  [1m[35m (111.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-06 12:54:25.770521"], ["updated_at", "2018-02-06 12:54:25.770521"]]
+  [1m[35m (73.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2018-02-06 18:39:33 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("description", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "This is the greatest idea ever"], ["author", "Me"], ["created_at", "2018-02-06 12:55:08.186267"], ["updated_at", "2018-02-06 12:55:08.186267"]]
+  [1m[35m (69.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ideas" ("description", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "This is the intro idea by @cdrrazan"], ["author", "Rajan Bhattarai"], ["created_at", "2018-02-06 12:55:51.550675"], ["updated_at", "2018-02-06 12:55:51.550675"]]
+  [1m[35m (73.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2018-02-06 18:42:47 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 43.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:43:06 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:43:28 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:44:02 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:44:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:44:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:47:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:48:21 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:48:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:49:19 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/ideas/index.html.erb:14: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/" for ::1 at 2018-02-06 18:49:30 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:49:59 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:50:11 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:50:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:52:46 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 287ms (Views: 275.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:54:10 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (317.2ms)
+Completed 500 Internal Server Error in 320ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x00559ea916ce00>:0x007f3b41669260>
+Did you mean?  image_path):
+    1: <%= simple_form_for Idea.new do |f| %>
+    2:   <%= f.input :description %>
+    3:   <%= f.input :author %>
+    4:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:1:in `_app_views_ideas_index_html_erb__4187690445043205089_69946238522800'
+Started GET "/" for ::1 at 2018-02-06 18:55:07 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (121.2ms)
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x00559ea916ce00>:0x007f3b2c6ea938>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__4187690445043205089_69946062625160'
+Started GET "/" for ::1 at 2018-02-06 18:55:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (201.2ms)
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x00559ea916ce00>:0x00559ea91f9670>
+Did you mean?  image_path):
+    1: <%= simple_form_for Idea.new do |f| %>
+    2:   <%= f.input :description %>
+    3:   <%= f.input :author %>
+    4:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:1:in `_app_views_ideas_index_html_erb__4187690445043205089_47069965389200'
+Started GET "/" for ::1 at 2018-02-06 18:55:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 18:56:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (130.7ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x00559ea916ce00>:0x007f3b41db8f48>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__4187690445043205089_69946242354320'
+Started GET "/" for ::1 at 2018-02-06 18:57:51 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (171.5ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x0055da5a8de200>:0x007fe640a38940>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__2381694783995837850_47198155243000'
+Started GET "/" for ::1 at 2018-02-06 18:58:41 +0545
+Processing by IdeasController#index as HTML
+Started GET "/" for ::1 at 2018-02-06 18:58:51 +0545
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (138.2ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x007fe640af75c0>:0x007fe640af5590>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__2381694783995837850_70313452282200'
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (140.4ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x0055da5a7b1260>:0x0055da5a7add18>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__2381694783995837850_70313452282200'
+Started GET "/" for ::1 at 2018-02-06 18:59:17 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (139.3ms)
+Completed 500 Internal Server Error in 144ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x007fe6409030e8>:0x007fe640901248>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__2381694783995837850_70313451199840'
+Started GET "/" for ::1 at 2018-02-06 18:59:19 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Idea Load (0.0ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered ideas/index.html.erb within layouts/application (152.0ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `ideas_path' for #<#<Class:0x007fe6409030e8>:0x007fe640a7c618>
+Did you mean?  image_path):
+    1: 
+    2: <center><h1>Welcome to the idea-genX program!</h1></center>
+    3: <%= simple_form_for Idea.new do |f| %>
+    4:   <%= f.input :description %>
+    5:   <%= f.input :author %>
+    6:   <%= f.submit 'Submit' %>
+  
+app/views/ideas/index.html.erb:3:in `_app_views_ideas_index_html_erb__2381694783995837850_70313451973000'
+Started GET "/" for ::1 at 2018-02-06 19:00:58 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (79.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 362ms (Views: 359.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/ideas" for ::1 at 2018-02-06 19:02:45 +0545
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1xB1IfHOLbY5TWtvtwFaUUXerXnDnSKOJcXMkdbKmBLSVuXbJJRRKDwfpWMopB8SAKuRfXqn9jPieH69oUV2yQ==", "idea"=>{"description"=>"", "author"=>""}, "commit"=>"Submit"}
+No template found for IdeasController#create, rendering head :no_content
+Completed 204 No Content in 11ms
+
+
+Started GET "/" for ::1 at 2018-02-06 19:05:44 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (16.1ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 96ms (Views: 92.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/ideas" for ::1 at 2018-02-06 19:05:51 +0545
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"InAyY5+kWh95bE4zq9e+/Fy5uw1yWOlgldvISmBeDJAnNqKZSv4mgXw+gD80cvu/GcyHCctiPd1SZnpmF9HiSw==", "idea"=>{"description"=>"This is guest post by Mr. debugger", "author"=>"Debugger"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[32mINSERT INTO "ideas" ("description", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "This is guest post by Mr. debugger"], ["author", "Debugger"], ["created_at", "2018-02-06 13:20:51.407015"], ["updated_at", "2018-02-06 13:20:51.407015"]]
+  [1m[35m (190.7ms)[0m  [1m[36mcommit transaction[0m
+No template found for IdeasController#create, rendering head :no_content
+Completed 204 No Content in 231ms (ActiveRecord: 193.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:06:43 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.9ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 58.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/ideas" for ::1 at 2018-02-06 19:06:50 +0545
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T87HBxrvH1ZW2P4r+RQfOCakH5jndP3RDkv/GHC5xzlKiFf9z7VjyFOKMCdmsVp7Y9EjnF5OKWzJ9k00BzYp4g==", "idea"=>{"description"=>"This is guest post by Mr. debugger", "author"=>"Debugger"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ideas" ("description", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "This is guest post by Mr. debugger"], ["author", "Debugger"], ["created_at", "2018-02-06 13:21:50.330587"], ["updated_at", "2018-02-06 13:21:50.330587"]]
+  [1m[35m (196.7ms)[0m  [1m[36mcommit transaction[0m
+No template found for IdeasController#create, rendering head :no_content
+Completed 204 No Content in 216ms (ActiveRecord: 197.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:07:36 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/ideas" for ::1 at 2018-02-06 19:07:43 +0545
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mUBJttOvf0Ysw5iShR/pk3wFobwg+K08ZNmHwnBkeLicBtlMBvUD2CmRVp4auqzQOXCduJnCeYGjZDXuB+uWYw==", "idea"=>{"description"=>"Fucker", "author"=>"fuck"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "ideas" ("description", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Fucker"], ["author", "fuck"], ["created_at", "2018-02-06 13:22:43.491317"], ["updated_at", "2018-02-06 13:22:43.491317"]]
+  [1m[35m (235.9ms)[0m  [1m[36mcommit transaction[0m
+No template found for IdeasController#create, rendering head :no_content
+Completed 204 No Content in 252ms (ActiveRecord: 236.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:08:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:09:29 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 63.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:09:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.7ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 73.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:13:04 +0545
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/controllers/ideas_controller.rb:16: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/ideas_controller.rb:16: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for ::1 at 2018-02-06 19:13:24 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:6: syntax error, unexpected '='
+nd=( f.submit 'Submit', class='btn btn-primary'
+                              ^
+/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+  end);@output_buffer.safe_append='
+     ^
+/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:10: syntax error, unexpected keyword_do_block, expecting ')'
+ @ideas.each do |idea| 
+               ^
+/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/ideas/index.html.erb:6: syntax error, unexpected '='
+app/views/ideas/index.html.erb:8: syntax error, unexpected keyword_end, expecting ')'
+app/views/ideas/index.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/ideas/index.html.erb:10: syntax error, unexpected keyword_do_block, expecting ')'
+app/views/ideas/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+app/views/ideas/index.html.erb:21: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/ideas/index.html.erb:23: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for ::1 at 2018-02-06 19:13:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 6ms
+
+
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:6: syntax error, unexpected '='
+nd=( f.submit 'Submit', class='btn btn-primary' );@output_bu
+                              ^):
+  
+app/views/ideas/index.html.erb:6: syntax error, unexpected '='
+Started GET "/" for ::1 at 2018-02-06 19:13:53 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/views/ideas/index.html.erb:6: syntax error, unexpected '='
+nd=( f.submit 'Submit', class='btn btn-primary' );@output_bu
+                              ^):
+  
+app/views/ideas/index.html.erb:6: syntax error, unexpected '='
+Started GET "/" for ::1 at 2018-02-06 19:14:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:14:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:14:56 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:17:03 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:17:26 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:17:53 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mIdea Load (0.9ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2018-02-06 19:25:04 +0545
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/controllers/ideas_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/ideas_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2018-02-06 19:25:40 +0545
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/controllers/ideas_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/ideas_controller.rb:27: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2018-02-06 19:27:02 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (46.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 535ms (Views: 530.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:28:44 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 19:54:44 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (164.8ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_ideas_path' for #<#<Class:0x0055feacc10a60>:0x007f2a31b9b0b0>
+Did you mean?  edit_idea_path):
+    22:                 </p>
+    23:                 <small>by <%= idea.author %></small>
+    24:             </blockquote>
+    25:             <%= link_to 'Edit', edit_ideas_path(@idea), class: 'btn btn-sm btn-primary' %>
+    26: 
+    27:             end
+    28:         </div>
+  
+app/views/ideas/index.html.erb:25:in `block in _app_views_ideas_index_html_erb___119727619651320532_69909599804740'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___119727619651320532_69909599804740'
+Started GET "/" for ::1 at 2018-02-06 19:55:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ideas", :id=>nil}, missing required keys: [:id]):
+    23:                 <small>by <%= idea.author %></small>
+    24:             </blockquote>
+    25:           <div class="btn-group" role="group">
+    26:         <%= link_to 'Delete', idea_path(@idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+    27:         <%= link_to 'Revise', edit_idea_path(@idea), class: 'btn btn-sm btn-success' %>
+    28:       </div>
+    29:             end
+  
+app/views/ideas/index.html.erb:26:in `block in _app_views_ideas_index_html_erb___119727619651320532_69909597663180'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___119727619651320532_69909597663180'
+Started GET "/" for ::1 at 2018-02-06 19:55:49 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    23:                 <small>by <%= idea.author %></small>
+    24:             </blockquote>
+    25:           <div class="btn-group" role="group">
+    26:         <%= link_to 'Delete', idea_path(@idea[:id]), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+    27:         <%= link_to 'Revise', edit_idea_path(@idea), class: 'btn btn-sm btn-success' %>
+    28:       </div>
+    29:             end
+  
+app/views/ideas/index.html.erb:26:in `block in _app_views_ideas_index_html_erb___119727619651320532_69909596439880'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___119727619651320532_69909596439880'
+Started GET "/" for ::1 at 2018-02-06 19:56:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (21.8ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ideas", :id=>nil}, missing required keys: [:id]):
+    23:                 <small>by <%= idea.author %></small>
+    24:             </blockquote>
+    25:           <div class="btn-group" role="group">
+    26:         <%= link_to 'Delete', idea_path(@idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+    27:         <%= link_to 'Revise', edit_idea_path(@idea), class: 'btn btn-sm btn-success' %>
+    28:       </div>
+    29:             end
+  
+app/views/ideas/index.html.erb:26:in `block in _app_views_ideas_index_html_erb___119727619651320532_69909597862520'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___119727619651320532_69909597862520'
+Started GET "/" for ::1 at 2018-02-06 20:02:19 +0545
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (48.9ms)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"ideas", :id=>nil}, missing required keys: [:id]):
+    24:             </blockquote>
+    25:           <div class="btn-group" role="group">
+    26:         <%= link_to 'Delete', idea_path(idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+    27:         <%= link_to 'Revise', edit_idea_path(@idea), class: 'btn btn-sm btn-success' %>
+    28:       </div>
+    29:             end
+    30:         </div>
+  
+app/views/ideas/index.html.erb:27:in `block in _app_views_ideas_index_html_erb___4430663473198336844_69896906226920'
+app/views/ideas/index.html.erb:16:in `_app_views_ideas_index_html_erb___4430663473198336844_69896906226920'
+Started GET "/" for ::1 at 2018-02-06 20:02:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 311ms (Views: 309.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/ideas/2" for ::1 at 2018-02-06 20:02:45 +0545
+Processing by IdeasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mn9noJdPVhgcSVQ2iEbqHx0ICnttxDQ7uZboUthzEDefOfdaQhUqhhkbmjoX469cWH02f9T+4IZ+K1p+r/z+7A==", "id"=>"2"}
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (13.5ms)[0m  [1m[31mDELETE FROM "ideas" WHERE "ideas"."id" = ?[0m  [["id", 2]]
+  [1m[35m (69.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 108ms (ActiveRecord: 83.1ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:02:45 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (40.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 92.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/ideas/3" for ::1 at 2018-02-06 20:02:48 +0545
+Processing by IdeasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"x6ySaXOkLySVTQSe8fnIV8VTj+985tSlog0A6a6vDJDC6gKTpv5TupAfypJuXI0UgCaz68XcABhlsLLF2SDiSw==", "id"=>"3"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "ideas" WHERE "ideas"."id" = ?[0m  [["id", 3]]
+  [1m[35m (121.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 126ms (ActiveRecord: 122.4ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:02:48 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/ideas/4" for ::1 at 2018-02-06 20:02:51 +0545
+Processing by IdeasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iwWKkLLs36hf1HWN3l7QNL7nIoxZQRUh8jpqHd+ND/KOQxpqZ7ajNlqGu4FB+5V3+5IeiOB7wZw1h9gxqALhKQ==", "id"=>"4"}
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[31mDELETE FROM "ideas" WHERE "ideas"."id" = ?[0m  [["id", 4]]
+  [1m[35m (142.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 150ms (ActiveRecord: 144.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:02:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 64.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/ideas/5" for ::1 at 2018-02-06 20:02:54 +0545
+Processing by IdeasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"yuZj0sdb8QgdyiYawKmS5pVz03q2/61EOeoma3D9lsLPoPMoEgGNlhiY6BZfDNel0Abvfg/Fefn+V5RHB3J4GQ==", "id"=>"5"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "ideas" WHERE "ideas"."id" = ?[0m  [["id", 5]]
+  [1m[35m (98.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 105ms (ActiveRecord: 99.6ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:02:54 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:03:06 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/ideas/1/edit" for ::1 at 2018-02-06 20:03:11 +0545
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/edit.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/cdrrazan/Enliv/idea-generator/app/views/ideas/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+                ^):
+  
+app/views/ideas/edit.html.erb:10: syntax error, unexpected keyword_ensure, expecting keyword_end
+Started GET "/ideas/1/edit" for ::1 at 2018-02-06 20:03:56 +0545
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering ideas/edit.html.erb within layouts/application
+  Rendered ideas/edit.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 60.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:01 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:11 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:12 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 165ms (Views: 162.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (18.1ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 78.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.9ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (19.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 72ms (Views: 65.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 59.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:16 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.9ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 73.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/ideas/1" for ::1 at 2018-02-06 20:04:21 +0545
+Processing by IdeasController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R9OXDb8CaRRHaj2UduNcsPa2da+3uBZqzgBb3IfMER9ClQf3algVikI485jpRhnzs8NJqw6CwtcJvenw8EP/xA==", "id"=>"1"}
+  [1m[36mIdea Load (0.1ms)[0m  [1m[34mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "ideas" WHERE "ideas"."id" = ?[0m  [["id", 1]]
+  [1m[35m (78.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 84ms (ActiveRecord: 79.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:21 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.4ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/ideas" for ::1 at 2018-02-06 20:04:42 +0545
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8mHJDyz9McNG3lAJLWdOU39p+JMFNON0rPHXMYg5Hln3J1n1+adNXUOMngWywgsQOhzEl7wON8lrTGUd/7bwgg==", "idea"=>{"description"=>"Welcome to Idea-GenX", "author"=>"Rajan Bhattarai"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "ideas" ("description", "author", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["description", "Welcome to Idea-GenX"], ["author", "Rajan Bhattarai"], ["created_at", "2018-02-06 14:19:42.144658"], ["updated_at", "2018-02-06 14:19:42.144658"]]
+  [1m[35m (155.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3001/
+Completed 302 Found in 176ms (ActiveRecord: 157.0ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:04:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (30.5ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 235ms (Views: 233.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:07:26 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1428ms (Views: 1427.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:07:31 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 104ms (Views: 101.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:07:32 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (81.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 462ms (Views: 460.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:07:40 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1755ms (Views: 1753.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:07:54 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1474ms (Views: 1472.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:08:05 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1590ms (Views: 1588.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:08:13 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.7ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 1584ms (Views: 1582.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:13:39 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (2.6ms)
+Completed 200 OK in 1554ms (Views: 1552.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:13:49 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 87.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:13:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:14:08 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  width": expected "{", was "; 50%;"):
+    4: <head>
+    5:     <title>IdeaGenX</title>
+    6:     <%= csrf_meta_tags %>
+    7:         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:             <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:                 <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo|Titillium+Web:300,400,600,700" rel="stylesheet">
+   10: </head>
+  
+app/assets/stylesheets/application.scss:51
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___165767027621213643_69896982754040'
+Started GET "/" for ::1 at 2018-02-06 20:14:20 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1530ms (Views: 1528.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:14:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:14:52 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1636ms (Views: 1634.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:15:04 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (38.1ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 1694ms (Views: 1693.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:15:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1628ms (Views: 1626.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:15:38 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:15:41 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:15:43 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:15:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 103ms (Views: 100.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:16:51 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 105ms (Views: 102.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:17:43 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1936ms (Views: 1935.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:17:50 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:18:19 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:18:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1641ms (Views: 1639.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:19:26 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:19:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (16.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (36.3ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 155ms (Views: 137.5ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:20:33 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.7ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1781ms (Views: 1778.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:20:56 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1366ms (Views: 1361.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:21:14 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navbar.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1672ms (Views: 1669.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:21:49 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.5ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 1620ms (Views: 1618.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:22:18 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1396ms (Views: 1394.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:22:49 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.3ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:23:21 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 63.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:23:34 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:23:42 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (18.9ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:24:09 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:24:15 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_navbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 51ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2018-02-06 20:24:27 +0545
+Processing by IdeasController#index as HTML
+  Rendering ideas/index.html.erb within layouts/application
+  [1m[36mIdea Load (0.2ms)[0m  [1m[34mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.2ms)
+
+
