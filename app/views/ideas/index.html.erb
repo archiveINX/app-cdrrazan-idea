@@ -1,0 +1,37 @@
+<center>
+    <h1>Welcome to the idea-genX program!</h1></center>
+<!-- Large modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Create Post</button>
+<hr />
+<div class="modal fade bs-example-modal-lg" tabindex="1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <h3>Create a post </h3>
+            <hr>
+            <div class="popup">
+            <%= simple_form_for Idea.new do |f| %>
+                <%= f.input :description %>
+                    <%= f.input :author %>
+                        <%= f.submit 'Submit', class: 'btn btn-primary'%>
+                            <% end %>
+                            <hr /></div>
+        </div>
+    </div>
+</div>
+
+<% @ideas.each do |idea| %>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <blockquote>
+                <p>
+                    <%= idea.description %>
+                </p>
+                <small>by <%= idea.author %></small>
+            </blockquote>
+          <div class="btn-group" role="group">
+        <%= link_to 'Delete this idea', idea_path(idea), method: :delete, class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure?"} %>
+        <%= link_to 'Edit this idea', edit_idea_path(idea), class: 'btn btn-sm btn-success' %>
+      </div>
+        </div>
+    </div>
+    <% end %>

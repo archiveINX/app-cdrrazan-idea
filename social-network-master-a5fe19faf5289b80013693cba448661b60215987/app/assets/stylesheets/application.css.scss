@@ -1,0 +1,173 @@
+@import "froala_style.min.css";
+@import "froala_editor.min.css";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'plugins/char_counter.min.css';
+@import 'plugins/code_view.min.css';
+@import 'plugins/colors.min.css';
+@import 'plugins/emoticons.min.css';
+@import 'plugins/file.min.css';
+@import 'plugins/fullscreen.min.css';
+@import 'plugins/help.min.css';
+@import 'plugins/image_manager.min.css';
+@import 'plugins/image.min.css';
+@import 'plugins/line_breaker.min.css';
+@import 'plugins/quick_insert.min.css';
+@import 'plugins/special_characters.min.css';
+@import 'plugins/table.min.css';
+@import 'plugins/video.min.css';
+@import "trix";
+@import "bootstrap";
+@import "navbar";
+
+$footer-header-height: 102px;
+$footer-body-height: 50px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px;
+  width: auto;
+}
+
+
+.header {
+  text-align: center;
+  }
+
+
+body {
+		background-color: white;
+		}
+
+#conversation-body {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 2em;
+}
+
+
+.show-posts {
+		margin: 0px auto;
+    width: 600px;
+}
+
+.nav-link {
+		color: green;
+
+}
+.newq{
+  max-width: 750px;
+  margin: 0px auto;
+
+}
+
+
+.answer-section {
+		padding: 20px;
+		font-size: large;
+		margin: 10px;
+}
+
+#answer-body {
+		color: red;
+}
+
+.footerholder {
+    background: none repeat scroll 0 0 transparent;
+    padding: 60px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+ul {
+	list-style: none;
+    padding-left: 0;
+    li {
+      display: inline;
+      margin-right: 1em;
+      }
+  }
+    background: none repeat scroll 0 0 white;
+    height: 100px;
+    margin: auto;
+    width: 500px;
+}
+
+.pathalloc
+{
+ max-width: 750px; 
+margin:0 auto;
+
+}
+
+.displayq{
+  max-width: 800px;
+  margin:0 auto;
+}
+
+.table{
+  width: 800px;
+  margin:0 auto;
+}
+
+.forumo{
+  position: absolute;
+  right: 160px;
+  }
+
+.chat{
+  width: 600px;
+  margin: 0 auto;
+}
+.msg-control{
+  margin: 0 auto;
+  width: 600px;
+  height: 100%;
+}
+.form1-group{
+  margin:0 auto;
+  width: 800px;
+}
+.users{
+  margin:0 auto;
+  width:800px
+}
+.rightd{
+   position:absolute;
+   right:10px;
+   top  :0px;
+}
+.profile{
+  margin:0 auto;
+  width:600px;
+}
+.form{
+  margin: 0 auto;
+  width: 600px;
+}
+.settings{
+  margin:0 auto;
+  width: 600px;
+}
+.post{
+  margin:0 auto;
+  width: 700px;
+}
+.users{
+  margin:0 auto;
+  widtj: 800px;
+}
+
+.hamro-recommendations {
+		text-align: center;
+}

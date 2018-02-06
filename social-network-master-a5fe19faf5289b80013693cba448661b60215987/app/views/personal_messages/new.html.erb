@@ -1,0 +1,15 @@
+<h2 class="header">New message to <%= @receiver.email %></h1>
+
+<%= form_for @personal_message do |f| %>
+		<div class="form1-group">
+				<%= hidden_field_tag 'receiver_id', @receiver.id %>
+				<div class="form-group row">
+						<label for="example-text-input" class="col-2 col-form-label">Message</label>
+						<div class="col-10 form-control">
+								<%= f.text_field :body, class: "form-control" %>
+						</div>
+				</div>
+		<%= f.submit "Send",class: "btn btn-success" %>
+
+<% end %> 
+

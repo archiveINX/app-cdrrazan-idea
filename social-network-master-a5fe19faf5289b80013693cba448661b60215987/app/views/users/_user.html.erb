@@ -1,0 +1,20 @@
+<%= user.email %>
+<table>
+
+		<tr>
+
+				<div class="rightd">
+				<td><%= link_to 'Send message', new_personal_message_path(receiver_id: user), class: "btn btn-warning" %>|</td>
+				<td>
+						<%= link_to "View profile",user_path(user.id), class: "btn btn-primary"%>|
+				</td>
+				<td>
+						<% if current_user.not_friends_with?(user.id) %>
+								<%= link_to "Follow",add_friends_path(user: current_user, friend: user), method: :post, class: "btn btn-primary" %>
+						<% else %>
+								<%= link_to "Unfollow", friendships_path(user), method: :delete, data: {:confirm => "Are you sure " },class: "btn btn-danger" %>
+						<% end %>
+				</td>
+				</div>
+		</tr>
+</table>

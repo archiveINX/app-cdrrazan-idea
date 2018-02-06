@@ -1,0 +1,24 @@
+<div id="chat">
+<h2 class="header">Send Message to <%= @conversation.with(current_user).email %></h2>
+
+<div id="conversation-main">
+		<div id="conversation-body">
+				<div>
+						<%= render @conversation.personal_messages %>
+				</div>
+				<div class="chat">
+		<%= form_for @personal_message do |f| %>
+				<%= hidden_field_tag 'conversation_id', @conversation.id %>
+				<div class="form-group">
+
+						<b>Your Message</b><hr/>
+						<div class="col-sm-1">
+								<%= f.text_area :body, class: "form1-control" %>
+						</div>
+				</div><br/>
+				<%= f.submit "Reply",class: "btn btn-success" %>
+				
+		<% end %>
+		</div>
+</div>
+</div>
