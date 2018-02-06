@@ -1,9 +1,0 @@
-<% @comments.each do |comment| %>
-		<div class="col-sm-10">
-				<b><%= comment.user.username %></b> says: <%= comment.body %>
-				<%# if can? :destroy, Comment %>
-						<small><%#= link_to "delete", post_comment_path(@post,comment), method: :delete %></small>
-				<%# end %>
-						<small><%#= link_to "edit",edit_post_comment_path(@post,comment)%></small>
-		</div>
-<% end %>
