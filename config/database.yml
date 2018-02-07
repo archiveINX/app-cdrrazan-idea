@@ -2,8 +2,8 @@ default: &default
       adapter: postgresql
       encoding: unicode
       pool: 5
-      username: username
-      password: password
+      username: cdrrazan
+      password: rajan
       host:     <%= ENV['IP'] %>
 
 development:
